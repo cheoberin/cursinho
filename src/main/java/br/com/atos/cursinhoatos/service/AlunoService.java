@@ -22,7 +22,7 @@ public class AlunoService {
         int numero = aluno.getEndereco().getNumero();
         String complemento = aluno.getEndereco().getComplemento();
 
-        if(!ObjectUtils.isEmpty(cep)){
+        if (!ObjectUtils.isEmpty(cep)) {
             Endereco endereco = enderecoService.getEndereco(cep);
             endereco.setNumero(numero);
             endereco.setComplemento(complemento);
